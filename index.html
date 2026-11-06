@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,10 @@
   <meta name="color-scheme" content="light">
   <title>Beyond the Grid | Engineering, Explained</title>
   <meta name="description" content="Exploring engineering, science and motorsport.">
+
   <style>
     :root {
+      color-scheme: only light;
       --pink: #e8cbd2;
       --rose: #b77c8c;
       --blush: #f8edef;
@@ -16,59 +19,26 @@
       --muted: #776d73;
     }
 
-    * { box-sizing: border-box; }
-  <style>/* Keep the entire website in light mode */
-:root {
-  color-scheme: only light;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-body, header, main, footer, section, article {
-  background-color: #fbf9f7;
-  color: #39343a;
-}
+    html {
+      background: var(--cream);
+      color-scheme: light;
+    }
 
-.hero {
-  background-color: #f8edef;
-}
+    body {
+      margin: 0;
+      background: var(--cream) !important;
+      color: var(--ink) !important;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
 
-.feature {
-  background-color: #ffffff;
-}
-
-h1, h2, h3, .logo {
-  color: #39343a;
-}
-
-nav a {
-  color: #39343a;
-}
-
-.card {
-  background-color: #ffffff;
-} <style>
-
-  html {
-  color-scheme: light;
-  background: #fbf9f7;
-}
-
-body {
-  margin: 0;
-  background-color: #fbf9f7 !important;
-  color: #39343a !important;
-  font-family: Arial, sans-serif;
-  line-height: 1.7;
-}
-
-.card {
-  background-color: #ffffff !important;
-  color: #39343a !important;
-}
-
-header, footer {
-  background-color: #fbf9f7 !important;
-  color: #39343a !important;
-}
+    header, footer, main, section, article {
+      color: var(--ink);
+    }
 
     header {
       padding: 22px 8%;
@@ -76,6 +46,7 @@ header, footer {
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid var(--pink);
+      background: var(--cream);
       flex-wrap: wrap;
       gap: 14px;
     }
@@ -94,7 +65,9 @@ header, footer {
       font-size: 13px;
     }
 
-    nav a:hover { color: var(--rose); }
+    nav a:hover {
+      color: var(--rose);
+    }
 
     .hero {
       padding: 100px 8% 90px;
@@ -114,6 +87,7 @@ header, footer {
       line-height: 1.1;
       max-width: 750px;
       margin: 20px 0;
+      color: var(--ink);
     }
 
     .hero p {
@@ -124,6 +98,7 @@ header, footer {
 
     .section {
       padding: 65px 8%;
+      background: var(--cream);
     }
 
     .section h2 {
@@ -146,7 +121,8 @@ header, footer {
 
     .card {
       padding: 25px;
-      background: white;
+      background: #ffffff !important;
+      color: var(--ink);
       border: 1px solid var(--pink);
       border-radius: 8px;
     }
@@ -169,28 +145,32 @@ header, footer {
     }
 
     .feature {
-      background: white;
+      background: #ffffff;
       border-top: 1px solid var(--pink);
       border-bottom: 1px solid var(--pink);
     }
 
-    .feature a {
-      color: var(--rose);
-      font-weight: bold;
-      text-decoration: none;
-    }
-
     footer {
       padding: 35px 8%;
+      background: var(--cream);
       color: var(--muted);
       font-size: 12px;
       text-align: center;
     }
 
     @media (max-width: 600px) {
-      header { align-items: flex-start; }
-      nav a { margin-left: 0; margin-right: 12px; }
-      .hero { padding-top: 65px; }
+      header {
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
     }
   </style>
 </head>
